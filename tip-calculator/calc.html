@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gorjeta</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="back">
+            <h1><a href="../index.html"> Voltar </a></h1>
+        </div>
+        <div id="container">
+            
+            <h1>Calculadora de Gorjeta</h1>
+          <div id="calculator">
+        <form>
+            <p> Quanto custou?
+            
+               <p> $ <input id="billamt" type="number" placeholder="Valor">
+
+                <p>Como foi o serviço?
+                    <p>
+                <select id="serviceQual">
+                    <option disabled selected value="0"> -- Selecione uma Opção -- </option>
+                    <option value="0.3">30&#37; &#45; Incrível!</option>
+                    <option value="0.2">20&#37; &#45; Bom :) </option>
+                    <option value="0.15">15&#37; &#45; Mais ou menos ~ </option>
+                    <option value="0.1">10&#37; &#45; Ruim :/ </option>
+                    <option value="0.05">5&#37; &#45; Péssimo !!</option>
+                </select>
+        </form>
+
+            <p> Quantas pessoas dividem a conta? </p>
+            <input id="peopleamt" type="number" placeholder="Número de Pessoas"><br><br>
+            <button type="button" id="calculate" onClick="calcTip()">Calcular!</button>
+            </div>
+
+            <div id="totalTip">
+                <br>R$ <span id="tip">0.00</span>
+                <small id="each">cada</small>
+            </div>
+        </div>
+
+    <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
