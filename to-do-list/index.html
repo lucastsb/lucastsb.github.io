@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset='utf-8'>
+        <title> Tarefas a Fazer </title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="intro col-12">
+				<h1> Tarefas a Fazer </h1>
+				<div>
+					<div class="border1"></div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="helpText col-12">
+                <p id="tip"> Instruções: </p>
+                <p id="instrucoes"> - Adicione a tarefa no campo abaixo </p>
+				<p id="instrucoes"> - Clique no item para marcar como completo </p>
+				<p id="instrucoes"> - Clique no X para remover uma Tarefa </p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<input id="userInput" type="text" placeholder="Nova Tarefa..." maxlength="32">
+				<button id="botao_adicionar"><i class="fas fa-pencil-alt"> Adicionar </i></button>
+			</div>
+		</div>
+
+		<!-- Empty List -->
+		<div class="row">
+			<div class="listItems col-12">
+				<ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
