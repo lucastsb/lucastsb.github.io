@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(228, 226, 220);
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+}
+
+.main-header {
+    background-color: rgb(12, 11, 11);
+    border-bottom: rgb(85, 72, 173);
+    height: 75px;
+    box-sizing: content-box;
+}
+
+.background-img{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.background-img img{
+    height: 798px;
+    width: 100%;
+    }
+
+.logo {
+    display: inline-block;
+    height: 80px;
+    padding: 15px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+
+.menu-toggle-btn {
+    float: right;
+    color: #eee;
+    background-color: rgb(58, 57, 57);
+    box-shadow: 1px 1px 15px rgb(156, 156, 245);
+    border: solid 1px rgb(156, 156, 245);
+    margin: 20px 20px 20px 0px;
+    border-radius: 5px;
+    height: 35px;
+    outline: none;
+}
+
+.menu-toggle:hover {
+    border: solid 1px rgb(90, 117, 90);
+    box-shadow: 1px 1px 15px rgb(90, 117, 90)
+}
+
+.menu-toggle:active {
+    border: solid 1px rgb(49, 189, 49);
+    box-shadow: 1px 1px 15px rgb(49, 189, 49);
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    height: 75px;
+    padding: 25px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.autent {
+    float: right;
+    height: 80px;
+    padding: 25px;
+}
+
+.autent a {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-right: 0px;
+}
+
+.autent a:hover {
+    color: chartreuse;
+}
+
+.btnRegister {
+    font-size: 1.1em;
+    outline: none;
+    border-radius: 15px;
+    font-family: 'Oswald', sans-serif;
+    height: 50px;
+    width: 90px;
+    margin-top: -10px;
+}
+
+.btnRegister:hover {
+    border: 1px solid rgb(233, 84, 84);
+    box-shadow: 1px 1px 10px rgb(233, 84, 84);
+    cursor: pointer;
+}
+
+.btnRegister:active {
+    border: 1px solid rgb(20, 192, 63);
+    box-shadow: 1px 1px 10px rgb(20, 192, 63);
+    background-color: rgb(20, 192, 63);
+    color: black;
+}
+
+.menu a:hover,
+.menu a.selected {
+    background-color: rgb(235, 116, 95);
+    color: rgb(255, 255, 255);
+}
+
+.destaque {
+    background: rgb(235, 116, 95);
+    color: #fff;
+}
+
+.main-footer {
+    background: transparent;
+    position: fixed;
+    display: flex;
+    box-sizing: border-box;
+    bottom: 0px;
+    margin: 0;
+    padding: 0;
+    height: 170px;
+    width: 100%;
+    color: rgb(255, 255, 255);  
+}
+
+.gw-container {
+    width: 65%;
+    
+    display: flex;
+}
+.gw{
+    width: 20%;
+  
+    text-align: center;
+}
+.staff-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 35%;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;  
+}
+.tag {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.tag-img {
+    width: 15%;
+    flex-wrap: wrap;
+    height: 30px;
+    text-align: center;
+}
+.tag-name {
+    width: 80%;
+    text-align: center;
+}
+.tag-title{
+    width: 100%;
+    text-align: center;
+    text-indent: 20px;
+}
+.tag img{
+    height: 100%;
+}
+.gw-container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.gw-img{
+    height: 140px;
+}
+
+.gw img{
+    height: 100%;
+}
+.footer-mobile{
+   color: #eee;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 10px;
+    margin: 0;
+}
+.footer-mobile span{
+    color: rgb(17, 201, 17);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+@media (max-width: 5000px){
+    .footer-mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 781px){
+    .gw-title{
+        display: none;
+    }
+    .staff-container{
+        display: none;
+    }
+    .gw-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 495px){
+    .main-footer{
+        display: none;
+    }
+    .footer-mobile{
+        display: flex;
+    }
+}
+
+@media (max-width: 414px){
+    .autent{
+        display: none;
+    }
+}
+
+@media (min-width: 414px){
+    .menu-toggle-btn{
+        display: none;
+    }
+}

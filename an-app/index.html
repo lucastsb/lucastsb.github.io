@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliança Nerd ✩</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="./assets/imgs/an_logo5.png" alt="logo" />
+            </a>
+        </div>
+        <button id='menu-toggle-btn' class="menu-toggle-btn">
+            <i class='fa fa-lg fa-bars'></i>
+        </button>
+        <!-- <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio"> Início </a>
+                </li>
+                <li>
+                    <a href="#membros"> Membros </a>
+                </li>
+                <li>
+                    <a href="#staff"> Staff </a>
+                </li>
+                <li>
+                    <a href="#contato"> Contato </a>
+                </li>
+            </ul>
+        </nav> -->
+        <aside class="autent">
+            <a href="#login" id='login' class='login'> Login </a>
+            <button id='btnRegister' class="btnRegister destaque"> SignUp </button>
+        </aside>
+    </header>
+    <div class="background-img">
+        <img src="./assets/imgs/guild_hall.jpg" alt="Guild Hall">
+    </div>
+    <!-- MODAL TELA CHEIA -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div id="modal-header" class="modal-header">
+                <div><span class="modal-close-btn">&times;</span></div>
+                <div>
+                    <h2 class="modal-title"> SignUp </h2>
+                </div>
+            </div>
+            <div id="modal-body" class="modal-body">
+                <div class="usrName">
+                    <img src="./assets/imgs/espadas.png" alt="">
+                    <input type="text" placeholder='Seu ID' class="gold-medals" onblur='this.placeholder="Seu ID"'
+                        onfocus="this.placeholder=''">
+                </div>
+                <div class="password">
+                    <img src="./assets/imgs/keys_img.png" alt="">
+                    <input type="password" placeholder='Senha' class="usrPass" onblur='this.placeholder="Senha"'
+                        onfocus="this.placeholder=''">
+                </div>
+                <!--<div class="gold-medal">
+                    <img src="./assets/imgs/gold_medal.png" alt="">
+                    <input type="number" min="1" max="9999" placeholder='Gold Medals' class="gold-medals"
+                        onblur='this.placeholder="Gold Medals"' onfocus="this.placeholder=''">
+                </div>
+                <div class="contrib">
+                    <img src="./assets/imgs/contrib.png" alt="">
+                    <input type="number" min="1" max="9999999" class="contrib" placeholder='Contribuição'
+                        onblur="this.placeholder='Contribuição'" onfocus="this.placeholder=''">
+                </div>-->
+            </div>
+            <div id="modal-footer" class="modal-footer">
+                <button type='submit' class="sendForm"> Enviar </button>
+            </div>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div id="modal-header" class="modal-header">
+                <div><span class="modal-close-btn">&times;</span></div>
+                <div>
+                    <!-- <h2 class="modal-title"> Login </h2> -->
+                </div>
+            </div>
+            <div id="modal-body" class="modal-body">
+                <div class="usrName">
+                    <img src="./assets/imgs/espadas.png" alt="">
+                    <input type="text" placeholder='Seu nick simplificado. ex: ravs' class="gold-medals" onblur='this.placeholder="Seu ID"'
+                        onfocus="this.placeholder=''">
+                </div>
+                <div class="password">
+                    <img src="./assets/imgs/keys_img.png" alt="">
+                    <input type="password" placeholder='Senha' class="usrPass" onblur='this.placeholder="Senha"'
+                        onfocus="this.placeholder=''">
+                </div>
+            </div>
+            <div id="modal-footer" class="modal-footer">
+                <button type='submit' class="sendForm"> Login </button>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DO MODAL TELA CHEIA -->
+    <footer class="footer-mobile">
+        <div class='signature'>Desenvolvido por <span> Lucas Tabosa</span></div>
+    </footer>
+    <footer class="main-footer">
+        <div class="gw-container">
+            <div class="gw">
+                <div class="gw-img"><img src="./assets/imgs/weapons/winter-crystal.png" alt="Winter Crystal"></div>
+                <div class="gw-title">Winter Crystal</div>
+            </div>
+            <div class="gw">
+                <div class="gw-img"><img src="./assets/imgs/weapons/war-ender.png" alt="War Ender"></div>
+                <div class="gw-title">War Ender</div>
+            </div>
+            <div class="gw">
+                <div class="gw-img"><img src="./assets/imgs/weapons/gods-gazer.png" alt="God's Gaze"></div>
+                <div class="gw-title">God's Gaze</div>
+            </div>
+            <div class="gw">
+                <div class="gw-img"><img src="./assets/imgs/weapons/mjolnir.png" alt="Mjolnir"></div>
+                <div class="gw-title">Mjolnir</div>
+            </div>
+            <div class="gw">
+                <div class="gw-img"><img src="./assets/imgs/weapons/omni-grimoire.png" alt="Omniscience Grimoire"></div>
+                <div class="gw-title">Omniscience Grimoire</div>
+            </div>
+            
+        </div>
+        <div class="staff-container">
+            <div class="tag">
+                <div class="tag-title"> Líderes: </div>
+            </div>
+            <div class="tag">
+                <div class="tag-img"><img src="./assets/imgs/saint_flag.png" alt=""></div>
+                <div class="tag-name">-Ravs-</div>
+            </div>
+                        <div class="tag">
+                <div class="tag-img"><img src="./assets/imgs/loghtbringer_flag.png" alt=""></div>
+                <div class="tag-name">DemonTakuma</div>
+            </div>
+            <div class="tag">
+                <div class="tag-img"><img src="./assets/imgs/doram_flag.png" alt=""></div>
+                <div class="tag-name">yamato</div>
+            </div>
+	    <div class="tag">
+                <div class="tag-img"><img src="./assets/imgs/saint_flag.png" alt=""></div>
+                <div class="tag-name">lucastsb</div>
+            </div>
+            
+        </div>
+    </footer> 
+
+</body>
+
+<script>
+    window.onhashchange = function (e) {
+        const oldURL = e.oldURL.split('#')[1];
+        const newURL = e.newURL.split('#')[1];
+
+        const oldMenu = document.querySelector(`.menu a[href='#${ oldURL }']`)
+        const newMenu = document.querySelector(`.menu a[href='#${ newURL }']`)
+
+        oldMenu && oldMenu.classList.remove('selected')
+        newMenu && newMenu.classList.add('selected')
+    }
+</script>
+<script src="main.js"></script>
+
+</html>
